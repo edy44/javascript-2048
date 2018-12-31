@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Sahara";
+    src: url('font/Sahara.ttf');
+}
+
+* {
+    font-family: "Sahara";
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#game {
+    float: left;
+    width: 60%;
+    max-height: 100%;
+}
+
+#grid {
+    max-height: 98%;
+    margin: 1%;
+    width: 75%;
+    background-color: #ffa600;
+    border-radius: 20px;
+}
+
+.line {
+    width: 100%;
+    position: relative;
+}
+
+.block {
+    background-color: beige;
+    margin: 3px;
+    height: 95%;
+    text-align: center; 
+    border-radius: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#interface {
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#score {
+
+    border-radius: 10px;
+    width: 100%;
+    height: 15%;
+    margin-top: 3%;
+    font-size: 2em;
+}
+
+.score {
+    float: left;
+    width: 40%;
+    text-align: center;
+    height: 40%;
+    margin: 1%;
+    background-color: #ffa600;
+    color: white;
+    border-radius: 10px;
+}
+
+#undo_action, #redo_action, #new_game {
+    width: 25%;
+    height: 7%;
+    margin: 1.5%;
+    font-size: 1.5em;
+    border: unset;
+    border-radius: 10px;
+}
+
+#new_game {
+    background-color: #005fbb;
+    color: white;
+}
+
+#undo_action {
+    background-color: white;
+}
+
+#redo_action {
+    background-color: #f10007;
+    color: white;
+}
+
+
+h1 {
+    margin: 5%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: 10%;
+    font-size: 3em;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    color: white;
+}
